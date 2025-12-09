@@ -13,9 +13,7 @@ class GeminiImageService: ObservableObject {
     @Published var lastError: String?
     @Published var generatedImage: UIImage?
 
-    // IMPORTANT: Replace with your Gemini API key before running
-    // Get your key at: https://aistudio.google.com/apikey
-    private let apiKey = "YOUR_GEMINI_API_KEY_HERE"
+    private let apiKey = Secrets.geminiKey
     // Using gemini-2.5-flash-image for free tier access (Nano Banana)
     // Change to "gemini-3-pro-image-preview" if you have billing enabled (Nano Banana Pro)
     private let model = "gemini-2.5-flash-image"

@@ -17,9 +17,7 @@ class OpenAIRealtimeService: NSObject, ObservableObject {
     @Published var lastError: String?
     @Published var isSpeaking = false
 
-    // IMPORTANT: Replace with your OpenAI API key before running
-    // Get your key at: https://platform.openai.com/api-keys
-    private let apiKey = "YOUR_OPENAI_API_KEY_HERE"
+    private let apiKey = Secrets.openAIKey
     private let model = "gpt-4o-realtime-preview-2024-12-17"
 
     private var webSocketTask: URLSessionWebSocketTask?

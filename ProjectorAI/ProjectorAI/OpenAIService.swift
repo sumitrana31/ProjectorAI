@@ -13,9 +13,7 @@ class OpenAIService: ObservableObject {
     @Published var lastResponse: String = ""
     @Published var lastError: String?
 
-    // IMPORTANT: Replace with your OpenAI API key before running
-    // Get your key at: https://platform.openai.com/api-keys
-    private let apiKey = "YOUR_OPENAI_API_KEY_HERE"
+    private let apiKey = Secrets.openAIKey
     private let model = "gpt-4o"
     private let baseURL = "https://api.openai.com/v1/chat/completions"
 

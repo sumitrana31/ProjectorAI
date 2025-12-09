@@ -48,9 +48,8 @@ Thumbs.db
 .idea/
 *.iml
 
-# Secrets (API keys should be in environment or secure storage)
-# Note: For this project, keys are embedded for development convenience
-# In production, use proper secret management
+# Secrets - API keys file (gitignored, keep your keys here locally)
+ProjectorAI/ProjectorAI/Secrets.swift
 
 # Archives
 *.ipa

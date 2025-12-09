@@ -14,9 +14,7 @@ class OpenAIImageService: ObservableObject {
     @Published var lastError: String?
     @Published var generatedImage: UIImage?
 
-    // IMPORTANT: Replace with your OpenAI API key before running
-    // Get your key at: https://platform.openai.com/api-keys
-    private let apiKey = "YOUR_OPENAI_API_KEY_HERE"
+    private let apiKey = Secrets.openAIKey
     private let model = "gpt-image-1"
     private let baseURL = "https://api.openai.com/v1/images"
 
